@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.nav {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 44px;
+}
+
+.nav h1 {
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #575053;
+}
+
+.nav img {
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+}
+
+.main-content {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.text-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: center;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    letter-spacing: -3px;
+    color: #ee1d66;
+}
+
+.text-content p {
+    font-size: 1.15rem;
+    letter-spacing: -1px;
+    color: #8b717a;
+}
+
+form {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.25rem;
+}
+
+.input-group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 49%;
+    padding: 1rem;
+    border-radius: 44px;
+    outline: none;
+    border: 1px solid #fff0f5;
+    font-size: 0.875rem;
+}
+
+input:focus {
+    border: 1px solid #ee1d66;
+}
+
+button {
+    padding: 1.5rem 4rem;
+    background-color: #ee1d66;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 44px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0059;
+}
+
+@media (max-width:512px) {
+    .nav {
+        width: 80%;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 1.75rem;
+        text-align: center;
+        /* line-height: 140%; */
+    }
+
+    .text-content p {
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 160%;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+        row-gap: 1.25rem;
+    }
+    
+    .input-group {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.65rem;
+    }
+    
+    input {
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+        padding: 1.5rem 4rem;
+        background-color: #ee1d66;
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 44px;
+        cursor: pointer;
+    }
+    
+}
